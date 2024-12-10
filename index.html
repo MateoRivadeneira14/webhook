@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Webhook</title>
+</head>
+<body>
+    <h1>Eventos Webhook</h1>
+    
+    <!-- Formulario para agregar un evento -->
+    <h2>Crear nuevo evento</h2>
+    <form id="event-form">
+        <label for="evento">Evento:</label>
+        <input type="text" id="evento" required><br>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+
+        <button type="submit">Crear Evento</button>
+    </form>
+
+    <!-- Botón para obtener eventos -->
+    <button id="get-events">Obtener eventos</button>
+    
+    <!-- Lista de eventos recibidos -->
+    <ul id="event-list"></ul>
+
+    <!-- Incluir el archivo JavaScript -->
+    <script src="/app.js"></script>
+</body>
+</html>
